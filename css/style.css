@@ -176,6 +176,12 @@ dd {
   width: 100%;
 }
 
+.btn-sensei{
+  margin-top: 3.5rem;
+  width: 90%;
+}
+
+
 /* ---------- Títulos ---------- */
 .eyebrow {
   font-family: var(--font-ui);
@@ -692,8 +698,10 @@ dd {
 .belts__black .belt::after {
   box-shadow: inset 0 0 0 1px rgba(242, 241, 238, 0.3);
 }
-.belts__black {
-  color: var(--text) !important;
+
+.desc_belt{
+  font-size: 0.75rem;
+  margin-top: -1.3rem;
 }
 
 /* ---------- Chamada (único bloco de cor da página) ---------- */
@@ -995,6 +1003,10 @@ dd {
     width: min(84vw, 350px);
   }
 
+  .eyebrow{
+    margin-top: 1em;
+  }
+
   .dojo,
   .kun-wrap,
   .contact {
@@ -1023,6 +1035,9 @@ dd {
   }
   .slot {
     min-height: 0;
+  }
+  .btn-sensei{
+    width: 100%;
   }
 }
 
