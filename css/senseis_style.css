@@ -177,6 +177,11 @@ h2 {
   font-size: 15px;
 }
 
+.section_equipe {
+  margin-bottom: 2em;
+  padding: 10px;
+}
+
 .time {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -206,7 +211,95 @@ h2 {
 }
 
 .section_sensei {
-  padding: clamp(2rem, 11vw, 8.5rem) 0;
+  padding: clamp(2rem, 11vw, 1.5rem) 0;
+  position: relative;
+}
+
+.aliance {
+  border-block: 1px solid var(--line);
+  padding: 3.5rem 0;
+}
+
+.alliance__inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.alliance_logos {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.alliance_logos > span {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.alliance_logos span img {
+  width: 100%;
+  height: 100%;
+}
+
+.alliance_logos span:first-child img {
+  transform: scale(1.12);
+}
+
+.alliance_corpo {
+  flex: 1;
+}
+
+.aliance h2 {
+  font-family: var(--font-brand);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  background: var(--red);
+  padding: clamp(3.5rem, 7vw, 5rem) 0;
+  overflow: hidden;
+}
+
+.cta_inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cta_kanji {
+  position: absolute;
+  right: 22%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-jp);
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0.13);
+  pointer-events: none;
+}
+
+.cta h2 {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.cta p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.cta .btn {
   position: relative;
 }
 
@@ -236,6 +329,16 @@ h2 {
     grid-template-columns: 1fr;
     gap: 1.75rem;
   }
+
+  .alliance__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .aliance .btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -257,5 +360,15 @@ h2 {
   .quote_membro {
     grid-column: 1 / -1;
     margin-top: 0.25rem;
+  }
+
+  .cta_inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta_kanji {
+    right: -10px;
+    font-size: 7rem;
   }
 }
